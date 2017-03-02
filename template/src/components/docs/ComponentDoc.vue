@@ -1,6 +1,6 @@
 <template>
 <div>
-  <h2>{{ componentName }}</h2>
+  <h2>\{{ componentName }}</h2>
   <slot></slot>
   <slot name='controls' >
   </slot>

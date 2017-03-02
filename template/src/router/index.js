@@ -44,7 +44,7 @@ let routes = [
     name: 'Home',
     component: HomePage
   }
-].concat(GeneralPurpose).concat(Client).concat(Practitioner)
+].concat(GeneralPurpose).concat(SomeOtherSection)
 
 export default new Router({
   routes: routes

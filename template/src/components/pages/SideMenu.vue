@@ -11,11 +11,11 @@
     v-for='(section, index) in nav'
     :key="section.name"
     :index="section.name" >
-    <template slot="title">{{section.name}}</template>
+    <template slot="title">\{{section.name}}</template>
       <el-menu-item
         v-for='(link, index) in section.contents'
         :key='link.path'
-        :index='link.path' >{{ link.name }}
+        :index='link.path' >\{{ link.name }}
       </el-menu-item>
   </el-submenu>
 </el-menu>
