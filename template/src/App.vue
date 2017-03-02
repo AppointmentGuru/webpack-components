@@ -4,7 +4,7 @@
       <el-col :span="24">
         <el-menu  mode="horizontal" >
           <el-menu-item index="1">
-            AppointmentGuru Components
+            {{ name }}
           </el-menu-item>
         </el-menu>
       </el-col>
