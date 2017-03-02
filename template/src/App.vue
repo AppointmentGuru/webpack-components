@@ -4,7 +4,7 @@
       <el-col :span="24">
         <el-menu  mode="horizontal" >
           <el-menu-item index="1">
-            AppointmentGuru Components
+            {{name}}
           </el-menu-item>
         </el-menu>
       </el-col>
@@ -25,15 +25,14 @@
 <script>
 {{#unless router}}
 import Hello from './components/Hello'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-
 {{/unless}}
 import SideMenu from '@/components/pages/SideMenu'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 export default {
-  name: 'app'{{#router}}{{#if_eq lintConfig "airbnb"}},{{/if_eq}}{{else}},
+  name: 'app'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}{{else}},
   components: {
     SideMenu{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-  }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}{{/router}}
+  }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
 }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 </script>
 
